@@ -18,4 +18,4 @@ min12=$(cat wages.csv | cut -d , -f 3,4 | grep -w "12" | sort -k 2,2n -t ,| head
 echo "12 years of school minimum wage: $min12"
 min16=$(cat wages.csv | cut -d , -f 3,4 | grep -w "16" | sort -k 2,2n -t ,| head -n 1 | cut -d , -f 2)
 echo "16 years of school minimum wage: $min16"
-Echo "Difference in minimum wage: "$(echo "$min16 - $min12" | bc)
+Echo "Difference in minimum wage= "$(echo "$min16 - $min12" | bc)
